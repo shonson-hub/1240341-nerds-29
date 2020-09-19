@@ -1,0 +1,218 @@
+/* Variables*/
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #283136;
+  --basic-dark: #888888;
+  --basic-to-dark: #444444;
+  --basic-gray: #a6a6a6;
+  --basic-lihgt-gray: #666666;
+  --basic-dark-grey: #4d4d4d;
+  --basic-neutral: #EEEEEE;
+  --basic-light: #e1e1e1;
+  --basic-extra-light: #ffffff;
+  --basic-light-red: #FB565A;
+  --basic-red: #E74246;
+  --basic-dark-red: #D7373B;
+  --basic-light-green: #00CA74;
+  --basic-green: #00BC6C;
+  --basic-dark-green: #00AA62;
+  --basic-light-yellow: #EFC84A;
+  --basic-yellow: #EAB534;
+  --basic-dark-yellow: #E5A722;
+}
+
+/*Global*/
+
+body {
+min-width: 1440;
+margin: 0;
+padding: 0;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+color: var(--basic-extra-dark);
+text-transform: none;
+
+}
+
+.page a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Main-navigation*/
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: trasparent;
+}
+
+.site-navigation {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+/*User Navigation*/
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+background-color: var(--basic-extra-light);
+}
+
+.cart {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.features b {
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black)
+}
+.featuer a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-extra-light);
+}
+
+/*Feature*/
+
+.feature-list {
+list-style: none;
+}
+
+.feature-item {
+  text-align: left;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-extra-light);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-red);
+  border: none;
+  border-radius: 3px;
+}
+.button1 {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-extra-light);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-green);
+  border: none;
+  border-radius: 3px;
+}
+.button2 {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-extra-light);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-yellow);
+  border: none;
+  border-radius: 3px;
+}
+.button:hover {
+  background-color: var(--basic-red);
+}
+.button:active {
+  background-color: var(--basic-dark-red);
+}
+
+.button1:hover {
+  background-color: var(--basic-green);
+}
+.button1:active {
+  background-color: var(--basic-dark-green);
+}
+.button2:hover {
+  background-color: var(--basic-yellow);
+}
+.button2:active {
+  background-color: var(--basic-dark-yellow);
+}
+
+.about h2 {
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+.about h3 {
+  text-transform: uppercase;
+}
+.about-list {
+  list-style:none;
+}
+
+.advantages h2 {
+  text-transform: uppercase;
+  color: #000000;
+}
+.advantages h3 {
+  font-size: 45px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts h2 {
+  font-size: 18px;
+  list-style: 30px;
+  color: #000000;
+}
+.contacts address {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-lihgt-gray);
+}
+
+.footer-social h2 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+.footer-social p {
+  font-size: 16px;
+  line-height: 22;
+  color: #444444;
+}
+
+.social-contacts {
+  list-style: none;
+}
+.social-button {
+  color: inherit;
+  background-color: var(--basic-light);
+}
+.social-button:hover {
+  background-color: var(--basic-red);
+}
+.social-button:focus {
+  background-color: var(--basic-dark-red);
+}
