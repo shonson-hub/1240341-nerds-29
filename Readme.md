@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Бекренев](https://up.htmlacademy.ru/htmlcss/29/user/1240341).
-* Наставник: [Влад Кривокора](https://vk.com/krivokoravlad).
+* Наставник: [Влад Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
