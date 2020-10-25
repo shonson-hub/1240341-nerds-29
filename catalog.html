@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Каталог Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page-body">
+    <header class="main-header-catalog">
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип Нёрд составленный в СВГ">
+          </a>
+          <ul class="site-navigation">
+            <li><a href=""><b>студия</b></a></li>
+            <li><a href=""><b>клиенты</b></a></lI>
+            <li><a class="active-link" href="catalog.html"><b>магазин</b></a></li>
+            <li><a href=""><b>контакты</b></a></li>
+          </ul>
+          <div class="user-navigation">
+            <a class="cart" href="blank.html">
+              <img class="cart-icon" href="#" src="img/cart-icon.svg" width="15" height="15" alt="значёк корзины в виде тележки"><b>корзина</b>
+            </a>
+          </div>
+        </nav>
+        <div class="preview">
+          <h1 class="page-title">Магазин готовых шаблонов</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-catalog container">
+      <section class="filters">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend><b>стоимость:</b></legend>
+            <ul>
+
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend><b>сетка:</b></legend>
+            <ul>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="adaptive" id="filter-adaptive">
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="fixed" id="filter-fixed">
+                <label class="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="rubber" id="filter-rubber">
+                <label class="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend><b>особенности:</b></legend>
+            <ul>
+              <li>
+                <input class="visually-hidden" type="text" name="" id="">
+                <label>Слайдер</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="text" name="" id="">
+                <label>Блок преимуществ</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="text" name="" id="">
+                <label>Новости</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="text" name="" id="">
+                <label>Галерея</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="text" name="" id="">
+                <label>Корзина</label>
+            </ul>
+          </fieldset>
+
+          <button class="filter-button">показать</button>
+        </form>
+
+      </section>
+
+      <section class="catalog">
+        <fieldset>
+          <legend><b>сортировать:</b></legend>
+          <ul class="sort-filter">
+            <li>
+              <input class="visually-hidden" type="text" name="" id="">
+              <label>по цене</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="text" name="" id="">
+              <label>по типу</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="text" name="" id="">
+              <label>по названию</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="product.html">
+              <h3>sedona</h3>
+              <p>Информационный сайт<br>для туристов</p>
+              <p>
+                <img src="img/sedona.jpg" width="359" height="578" alt="Sedona-информационный сайт для туристов">
+              </p>
+              <p>
+                <button class="button catalog-button" type="button">9900</button>
+              </p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <h3>pink</h3>
+              <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+              <p>
+                <img src="img/pink.jpg" width="358" height="578" alt="pink-продуктовый лендиинг для iOS и Android">
+              </p>
+              <p>
+                <button class="button catalog-button" type="button">9900</button>
+              </p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <h3>borodinski</h3>
+              <p>Стрижка у нас<br>это выгодно!</p>
+              <p class="catalog-item-image">
+                <img src="img/barbershop.jpg" width="358" height="578" alt="borodinski-стрижка у нас это выгодно">
+              </p>
+              <p>
+                <button class="button catalog-button" type="button">9900</button>
+              </p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <h3>mishka</h3>
+              <p>Милые штучки ручной<br>работы для дома</p>
+              <p>
+                <img src="img/mishka.jpg" width="359" height="578" alt="mishka-милые штучки ручной работы для дома">
+              </p>
+              <p>
+                <button class="button catalog-button" type="button">9900</button>
+              </p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <h3>aplus</h3>
+              <p>Учеба еще никогда<br>не была такой<br>интересной!</p>
+              <p>
+                <img src="img/aplus.jpg" width="359" height="578" alt="aplus-учеба еще никогда не была такой интересной!">
+              </p>
+              <p>
+                <button class="button catalog-button" type="button">9900</button>
+              </p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <h3>кваст</h3>
+              <p>крафтовый квас<br>всему голова!</p>
+              <p>
+                <img src="img/kvast.jpg" width="359" height="578" alt="kvast-крафтовый квас всему голова">
+              </p>
+              <p>
+                <button class="button catalog-button" type="button">9900</button>
+              </p>
+            </a>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current">
+            <a><b>1</b></a>
+          </li>
+          <li class="pagination-item">
+            <a href="#"><b>2</b></a>
+          </li>
+          <li class="pagination-item">
+            <a href="#"><b>3</b></a>
+          </li>
+          <li class="pagination-item">
+            <a href="#"><b>следующая</b></a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="page-footer main-footer">
+      <div class="container">
+        <section class="footer-social">
+          <ul class="social-contacts">
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">вконтакте</span>
+                <img src="img/vk-icon.svg" width="26" height="15" alt="лого вконтакте">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">фейсбук</span>
+                <img src="img/fb-icon.svg" width="12" height="22" alt="лого фейсбук">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">инстаграм</span>
+                <img src="img/insta-icon.svg" width="21" height="21" alt="лого инстаграм">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="friends">
+          <h2><b>Давайте дружить, это выгодно!</b></h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+
