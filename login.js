@@ -4,9 +4,9 @@ const close = document.querySelector(".modal-close");
 const login = document.querySelector(".login-user");
 const form = popup.querySelector("form");
 const slider = document.querySelector(".features");
-const slideFst = document.querySelector(".slider-buttonFst");
-const slideSnd = document.querySelector(".slider-buttonSnd");
-const slideThd = document.querySelector(".slider-buttonTrd");
+const slideFst = document.querySelector(".slider-button-fst");
+const slideSnd = document.querySelector(".slider-button-snd");
+const slideThd = document.querySelector(".slider-button-trd");
 const cleardot = document.querySelectorAll(".current");
 
 contact.addEventListener("click",function (evt) {
