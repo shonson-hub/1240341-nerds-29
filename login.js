@@ -24,11 +24,3 @@ close.addEventListener("click",function (evt){
 form.addEventListener("submit",function (evt) {
   evt.preventDefault();
 });
-
-slideSnd.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  slider.classList.remove("featuresFst");
-  slider.classList.add("featuresSnd");
-  slider.classList.remove("cleardot");
-  slideSnd.classList.add("current");
-});

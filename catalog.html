@@ -21,9 +21,7 @@
             <li><a class="active-link" href="catalog.html">магазин</a></li>
             <li><a href="#">контакты</a></li>
           </ul>
-          <div class="user-navigation">
-            <a class="cart" href="#">корзина</a>
-          </div>
+          <a class="cart" href="#">корзина</a>
         </nav>
         <div class="preview">
           <h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -32,7 +30,7 @@
     </header>
 
     <main class="page-catalog container">
-      <!-- <section> -->
+      <section class="page-catalog">
         <h2 class="visually-hidden">Товары каталога</h2>
         <aside class="filters">
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -41,17 +39,10 @@
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar" style="
-                        width: 30%;
-                        margin-left: 20%;
-                      "></div>
+                      <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0" style="
-                      left: 20%;
-                    "></div>
-                    <div class="toggle toggle-max" tabindex="0" style="
-                    left: 50%;
-                    "></div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
                   <div class="price-controls">
                     <label class="min-price">
@@ -81,38 +72,37 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend>особенности:</legend>
+              <legend class="special">особенности:</legend>
               <ul>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-special filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider-slider" id="filter-slider" checked>
-                  <label for="slider">Слайдер</label>
+                  <label for="filter-slider">Слайдер</label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-special filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages-block-block" id="filter-advantages-block">
-                  <label for="advantages-block">Блок преимуществ</label>
+                  <label for="filter-advantages-block">Блок преимуществ</label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-special filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news-news" id="filter-news" checked>
-                  <label for="news">Новости</label>
+                  <label for="filter-news">Новости</label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-special filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="galery-galery" id="filter-galery">
-                  <label for="galery">Галерея</label>
+                  <label for="filter-galery">Галерея</label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-special filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart-box-box" id="filter-cart-box">
-                  <label>Корзина</label>
+                  <label for="filter-cart-box">Корзина</label>
+                </li>
               </ul>
             </fieldset>
-
-            <button type="button" type="submit" class="filter-button">показать</button>
+            <button type="submit" class="filter-button">показать</button>
           </form>
-
         </aside>
 
         <div class="catalog">
           <div class="sort">
-          <b>сортировать:</b>
+            <b>сортировать:</b>
             <ul class="sort-filter">
               <li>
                 <a class="sort-link active-sort" href="#">по цене</a>
@@ -123,118 +113,124 @@
               <li>
                 <a class="sort-link" href="#">по названию</a>
               </li>
+            </ul>
+            <ul class="sort-pagination">
               <li>
-                <a class="sort-link active-sort" href="#">&#9660</a>
+                <a class="sort-link active-sort" href="#">&#9660;</a>
               </li>
               <li>
-                <a class="sort-link" href="#">&#9650</a>
+                <a class="sort-link" href="#">&#9650;</a>
               </li>
             </ul>
           </div>
 
           <ul class="catalog-list">
             <li class="catalog-item">
+              <div class="product-head"></div>
               <img src="img/sedona.jpg" width="359" height="578" alt="Sedona-информационный сайт для туристов">
-                <div class="product">
-                  <a href="#">sedona</a>
-                  <p>Информационный сайт<br>для туристов</p>
-                  <button class="button catalog-button" type="button">9900</button>
-                </div>
+              <div class="product">
+                <a class="heading" href="#">sedona</a>
+                <p>Информационный сайт для&nbsp;туристов</p>
+                <a class="button catalog-button" href="#">9 900 &#8381;</a>
+              </div>
             </li>
             <li class="catalog-item">
+              <div class="product-head"></div>
               <img src="img/pink.jpg" width="358" height="578" alt="pink-продуктовый лендиинг для iOS и Android">
-                <div class="product">
-                  <a href="#">barbershop</a>
-                  <p>Сайт салона красоты.<br>Для мужчин,да.</p>
-                  <button class="button catalog-button" type="button">9900</button>
-                </div>
+              <div class="product">
+                <a class="heading" href="#">barbershop</a>
+                <p>Продуктовый лендинг приложения для IOS и Android</p>
+                <a class="button catalog-button" href="#">9 900 &#8381;</a>
+              </div>
             </li>
             <li class="catalog-item">
+              <div class="product-head"></div>
               <img src="img/barbershop.jpg" width="358" height="578" alt="borodinski-стрижка у нас это выгодно">
-                <div class="product">
-                  <a href="#">barbershop</a>
-                  <p>Сайт салона красоты.<br>Для мужчин,да.</p>
-                  <button class="button catalog-button" type="button">9900</button>
-                </div>
+              <div class="product">
+                <a class="heading" href="#">barbershop</a>
+                <p>Сайт салона красоты. Для&nbsp;мужчин,да.</p>
+                <a class="button catalog-button" href="#">9 900 &#8381;</a>
+              </div>
             </li>
             <li class="catalog-item">
+              <div class="product-head"></div>
               <img src="img/mishka.jpg" width="358" height="578" alt="mishka-милые штучки ручной работы для дома">
-                <div class="product">
-                  <a href="#">mishka</a>
-                  <p>Интернет-магазин<br>вязаных игрушек</p>
-                  <button class="button catalog-button" type="button">9900</button>
-                </div>
+              <div class="product">
+                <a class="heading" href="#">mishka</a>
+                <p>Интернет-магазин вязаных&nbsp;игрушек</p>
+                <a class="button catalog-button" href="#">9 900 &#8381;</a>
+              </div>
             </li>
             <li class="catalog-item">
+              <div class="product-head"></div>
               <img src="img/aplus.jpg" width="358" height="578" alt="aplus-учеба еще никогда не была такой интересной!">
-                <div class="product">
-                  <a href="#">a plus</a>
-                  <p>Лендинг курсов повышения<br>квалификации</p>
-                  <button class="button catalog-button" type="button">9900</button>
-                </div>
+              <div class="product">
+                <a class="heading" href="#">a plus</a>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="button catalog-button" href="#">9 900 &#8381;</a>
+              </div>
             </li>
             <li class="catalog-item">
+              <div class="product-head"></div>
               <img src="img/kvast.jpg" width="358" height="578" alt="kvast-крафтовый квас всему голова">
-                <div class="product">
-                  <a href="#">кваст</a>
-                  <p>Промо-сайт производителя<br>крафтового кваса</p>
-                  <button class="button catalog-button" type="button">9900</button>
-                </div>
+              <div class="product">
+                <a class="heading" href="#">кваст</a>
+                <p>Промо-сайт производителя крафтового&nbsp;кваса</p>
+                <a class="button catalog-button" href="#">9 900 &#8381;</a>
+              </div>
             </li>
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current">
-              <a>1</a>
+              <a class="page-number">1</a>
             </li>
             <li class="pagination-item">
-              <a href="#">2</a>
+              <a class="page-number" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a href="#">3</a>
+              <a class="page-number" href="#">3</a>
             </li>
             <li class="pagination-item">
               <a class="page-next" href="#">следующая</a>
             </li>
           </ul>
         </div>
-      <!-- </section> -->
+      </section>
     </main>
 
     <footer class="page-footer main-footer">
       <section class="block">
         <div class="contacts">
           <h2>NЁRDS DESIGN STUDIO</h2>
-          <address>191186,Санкт-Петербург, ул. Б. Конюшенная,д. 19/8</address>
+          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <a class="contact-button button" href="#">напишите нам</a>
         </div>
         <div class="modal-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603024379789!5m2!1sru!2sru" width="600" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603024379789!5m2!1sru!2sru" width="600" height="416"></iframe>
         </div>
       </section>
 
-      <div class="footer-social container">
-        <ul class="footer-social">
-            <li>
-              <a class="social-button" href="#">
+      <div class="container">
+        <div class="">
+          <ul class="footer-social">
+            <li class="social">
+              <a class="social-button logo-vk" href="#">
                 <span class="visually-hidden">вконтакте</span>
-                <img src="img/vk-icon.svg" width="26" height="15" alt="лого вконтакте">
               </a>
             </li>
-            <li>
-              <a class="social-button" href="#">
+            <li class="social">
+              <a class="social-button logo-fb" href="#">
                 <span class="visually-hidden">фейсбук</span>
-                <img src="img/fb-icon.svg" width="12" height="22" alt="лого фейсбук">
               </a>
             </li>
-            <li>
-              <a class="social-button" href="#">
+            <li class="social">
+              <a class="social-button logo-insta" href="#">
                 <span class="visually-hidden">инстаграм</span>
-                <img src="img/insta-icon.svg" width="21" height="21" alt="лого инстаграм">
               </a>
             </li>
-        </ul>
-
+          </ul>
+        </div>
         <div class="friends">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -254,7 +250,7 @@
           </label>
         </div>
           <label for="coment-coment"><b>Текст письма:</b><br>
-            <textarea class="comment" rows="5" id="coment-coment" name="comment" rows="8" placeholder="В свободной форме" required></textarea>
+            <textarea class="comment" rows="4" id="coment-coment" name="comment" placeholder="В свободной форме" required></textarea>
           </label>
           <button class="button modal-button" type="submit">отправить</button>
         <button class="modal-close" type="button" aria-label="закрыть"></button>
@@ -263,5 +259,5 @@
 
     <script src="login.js"></script>
   </body>
-
+</html>
 
