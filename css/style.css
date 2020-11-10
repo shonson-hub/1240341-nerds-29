@@ -111,7 +111,7 @@ img {
 }
 
 .main-header-logo {
-  width: 159px;
+  min-width: 159px;
   height: 65px;
   margin-top: 49px;
 }
@@ -562,7 +562,7 @@ background-color: transparent;
 
 .partners {
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 43px;
   border-top: 2px solid #EEEEEE;
   border-bottom: 2px solid #EEEEEE;
 }
@@ -573,27 +573,58 @@ background-color: transparent;
   width: 1085px;
   margin: 0;
   padding: 0;
-  padding-top: 66px;
+  padding-top: 64px;
   margin-left: 20px;
   justify-content: space-between;
   list-style: none;
-  }
-
-.partners-list li:not(:last-child) {
-  border-right: 2px solid #EEEEEE;
-  padding-right: 50px;
 }
 
-.partner-logo {
+.partner-logo-one {
+  display: block;
+  margin-left: 11px;
   opacity: 0.2;
 }
 
-.partner-logo:hover {
+.partner-logo-two {
+  display: block;
+  margin-left: -22px;
+  margin-top: -18px;
+  opacity: 0.2;
+}
+
+.partner-logo-three {
+  display: block;
+  margin-left: -20px;
+  opacity: 0.2;
+}
+
+.partner-logo-four {
+  display: block;
+  margin-top: -10px;
+  margin-right: -10px;
+  opacity: 0.2;
+}
+
+.partner-logo-one:hover,
+.partner-logo-two:hover,
+.partner-logo-three:hover,
+.partner-logo-four:hover {
   opacity: 1;
 }
 
-.partner-logo:active {
+.partner-logo-one:active,
+.partner-logo-two:active,
+.partner-logo-three:active,
+.partner-logo-four:active {
   opacity: 0.1;
+}
+
+.contacts-modal {
+  display: block;
+  position: relative;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .contacts {
@@ -603,8 +634,8 @@ background-color: transparent;
   height: 308px;
   margin: 0;
   padding: 0;
-  top: 134px;
-  left: 370px;
+  top: 55px;
+  left: 19px;
   background-color: var(--basic-extra-light);
   z-index: 200;
   padding-top: 29px;
@@ -613,8 +644,7 @@ background-color: transparent;
 
 .contacts h2 {
   font-size: 18px;
-  list-style: 30px;
-  margin-top: 23px;
+  margin-top: 22px;
   margin-left: 2px;
   color: #000000;
 }
@@ -638,8 +668,10 @@ background-color: transparent;
   padding-top: 23px;
 }
 
-.contacts a {
+.contacts2 {
   margin-left: 2px;
+  text-decoration: none;
+  color: #666666;
 }
 
 .main-footer .container {
@@ -785,18 +817,16 @@ background-color: transparent;
 .vk-icon::after {
   display: block;
   position: absolute;
-  /* width: 81px;
-  height: 81px; */
   background-image: url("../img/vk-icon.svg;");
   background-repeat: no-repeat;
 }
 
 .statistic {
-  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 23px;
   margin-left: -40px;
+  list-style: none;
 }
 
 .footer-social {
@@ -821,10 +851,6 @@ background-color: transparent;
   padding-left: 36px;
 }
 
-.special {
-  margin-top: -7px;
-}
-
 .filter legend {
   margin-bottom: 16px;
   font-size: 18px;
@@ -844,14 +870,12 @@ background-color: transparent;
 
 .filter-option label {
   position: relative;
-  /* display: block; */
   cursor: pointer;
   user-select: none;
 }
 
 .filter-special label {
   position: relative;
-  /* display: block; */
   cursor: pointer;
   user-select: none;
 }
@@ -1214,7 +1238,6 @@ background-color: transparent;
 }
 
 .catalog-item img {
-  /* margin-top: 40px; */
   border-radius: 5px;
 }
 
@@ -1239,7 +1262,6 @@ background-color: transparent;
   width: 50px;
   height: 50px;
   margin-right: 11px;
-  /* border: 3px solid #EEEEEE; */
 }
 
 .pagination-item  a {
@@ -1343,28 +1365,14 @@ background-color: transparent;
 }
 
 .modal-map iframe {
-  border: none;
   width: 100%;
   height: 416px;
+  border: none;
 }
 
 .modal-map {
   display: block;
-  margin-top: 80px;
   position: relative;
-  background-image: url("../img/modal-map.jpg");
-  background-repeat: no-repeat;
+  margin-top: 80px;
   z-index: 10;
-}
-
-.modal-map::before {
-  content: "";
-  position: absolute;
-  width: 231px;
-  height: 190px;
-  top: 20px;
-  left: 902px;
-  background-image: url("../img/map-marker.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
