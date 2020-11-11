@@ -561,7 +561,7 @@ background-color: transparent;
                                              /* PARTNERS */
 
 .partners {
-  position: relative;
+  /* position: relative; */
   padding-bottom: 43px;
   border-top: 2px solid #EEEEEE;
   border-bottom: 2px solid #EEEEEE;
@@ -581,6 +581,7 @@ background-color: transparent;
 
 .partner-logo-one {
   display: block;
+  position: relative;
   margin-left: 11px;
   opacity: 0.2;
 }
@@ -603,6 +604,34 @@ background-color: transparent;
   margin-top: -10px;
   margin-right: -10px;
   opacity: 0.2;
+}
+
+.partner-logo-one::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  left: 249px;
+  background-color: var(--basic-dark-grey);
+}
+
+.partner-logo-two::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  left: 953px;
+  margin-top: 17px;
+  background-color: var(--basic-dark-grey);
+}
+
+.partner-logo-three::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  left: 1250px;
+  background-color: var(--basic-dark-grey);
 }
 
 .partner-logo-one:hover,
