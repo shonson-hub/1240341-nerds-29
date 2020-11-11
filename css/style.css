@@ -126,7 +126,7 @@ img {
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
-  background-color: trasparent;
+  background-color: transparent;
 }
 
 .site-navigation {
@@ -476,7 +476,7 @@ background-color: transparent;
 .about h2 {
   display: block;
   width: 680px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-black);
@@ -909,6 +909,11 @@ background-color: transparent;
   user-select: none;
 }
 
+.filter .special {
+  margin-top: -7px;
+  margin-left: 1px;
+}
+
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -929,7 +934,7 @@ background-color: transparent;
   content: "";
   position: absolute;
   left: -36px;
-  top: -2px;
+  top: -1px;
   width: 26px;
   height: 26px;
   background-image: url("../img/checkbox-on.svg");
@@ -1113,9 +1118,13 @@ background-color: transparent;
   font-size: 14px;
   line-height: 18px;
   margin-top: 5px;
-  margin-left: -15px;
+  margin-left: -22px;
   text-transform: uppercase;
   list-style: none;
+}
+
+.sort-pagination li:nth-child(2) {
+  margin-left: -12px;
 }
 
 .sort {
@@ -1127,7 +1136,7 @@ background-color: transparent;
   font-family: inherit;
   font-size: 14px;
   line-height: 18px;
-  padding-right: 24px;
+  padding-right: 27px;
   color: #000000;
   opacity: 0.3;
 }
